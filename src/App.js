@@ -1,23 +1,16 @@
-import logo from './logo.svg';
+// import Counter from "./UseStates/Counter";
+// import Number from "./UseStates/State-basics/Number";
+// import String from "./UseStates/State-basics/String";
+import Boolean from "./UseStates/State-basics/Boolean";
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <Counter/> */}
+      {/* <Number/> */}
+      {/* <String/> */}
+      <Boolean/>
     </div>
   );
 }
