@@ -5,7 +5,7 @@ const Boolean = () => {
 
 function handleChange(e)
 {
-setFav(e.target.checked);
+setFav(e.target.value);
 }
 
 
@@ -13,7 +13,7 @@ setFav(e.target.checked);
     <>
     
     <label>
-        <input type="checkbox"  checked={fav} onChange={handleChange}/>
+        <input type="radio"  value={fav} onChange={handleChange}/>
         I Like This!
     </label>
  <p>  I {fav ? 'Like this dress' : 'dont like this'}</p>
