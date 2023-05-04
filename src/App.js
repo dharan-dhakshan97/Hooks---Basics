@@ -3,11 +3,11 @@
 // import String from "./UseStates/State-basics/String";
 // import Boolean from "./UseStates/State-basics/Boolean";
 // import Twovariables from "./UseStates/State-basics/Adding/Twovariables";
-// import Function from "./UseStates/State-basics/Updating/Function";
+//  import Function from "./UseStates/State-basics/Updating/Function";
 // import Nextstate from "./UseStates/State-basics/Updating/Nextstate";
 // import Objects from "./UseStates/State-basics/Updating/Objects";
-import Nestedobject from "./UseStates/State-basics/Updating/Nestedobject";
-import './App.css';
+// import Nestedobject from "./UseStates/State-basics/Updating/Nestedobject";
+import Updatingpreviousstate from "./UseEffects/Updatingpreviousstate";
 
 function App() {
   return (
@@ -20,7 +20,8 @@ function App() {
       {/* <Function/> */}
       {/* <Nextstate/> */}
       {/* <Objects/> */}
-      <Nestedobject/>
+      {/* <Nestedobject/> */}
+      <Updatingpreviousstate />
     </div>
   );
 }

@@ -1,24 +1,42 @@
-import React from 'react'
-import {useState} from "react";
+import React from "react";
+import { useState, useEffect } from "react";
 const Function = () => {
-    const [age,SetAge]=useState(40);
+  const [age, SetAge] = useState(40);
 
+  function increment() {
+    SetAge((a) => a + 1); //updating based on the previous state passing the updater function
+  }
 
-function increment()
-{
-    SetAge(a=>a+1);
-}
+  useEffect(() => {
+    console.log(age);
+    // setTimeout(()=>
+    // {
+    //   SetAge((age)=>age+1);
+    // },2000);
+  }, [age]);
 
   return (
     <div>
-        <h1>Your age is {age}</h1>
-        <button onClick={()=>{increment();
-        increment();
-        }}>+2</button>
-        <button onClick={()=>{increment();
-        increment();increment();}}>+1</button>
+      <h1>Your age is {age}</h1>
+      <button
+        onClick={() => {
+          increment();
+          increment();
+        }}
+      >
+        +2
+      </button>
+      <button
+        onClick={() => {
+          increment();
+          increment();
+          increment();
+        }}
+      >
+        +3
+      </button>
     </div>
-  )
-}
+  );
+};
 
-export default Function
+export default Function;
